@@ -1,0 +1,19 @@
+{
+    "name": "app-set",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/app.js",
+    "scripts": {
+        "start": "node server/app & npm run tsc & npm run css",
+        "tsc": "npx tsc -w",
+        "css": "sass --watch ./app/sass/:./dev/css/ --style=compressed --source-map",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "thegicode",
+    "license": "ISC",
+    "devDependencies": {
+        "express": "^4.18.2",
+        "sass": "^1.64.2",
+        "typescript": "^5.1.6"
+    }
+}
