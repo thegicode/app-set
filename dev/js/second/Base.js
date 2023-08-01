@@ -1,11 +1,9 @@
 export default class Base {
-    private readonly name;
-
-    constructor(name: string) {
+    constructor(name) {
         this.name = name;
     }
-
     log() {
         return this.name;
     }
 }
+//# sourceMappingURL=Base.js.map

@@ -11,8 +11,8 @@
         "forceConsistentCasingInFileNames": true,
         "types": ["jest"],
         "sourceMap": true,
-        "outDir": "dev/scripts"
+        "outDir": "./dev/js/"
     },
     "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "server/**.ts", "**/__tests__"]
+    "exclude": ["node_modules", "**/__tests__"]
 }
