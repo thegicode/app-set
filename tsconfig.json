@@ -9,9 +9,10 @@
         "moduleResolution": "node",
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
+        "types": ["jest"],
         "sourceMap": true,
         "outDir": "dev/scripts"
     },
     "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "server/**.ts"]
+    "exclude": ["node_modules", "server/**.ts", "**/__tests__"]
 }

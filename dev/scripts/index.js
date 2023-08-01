@@ -1,3 +1,4 @@
-"use strict";
-console.log("index");
+export default class Default {
+    constructor() { }
+}
 //# sourceMappingURL=index.js.map
