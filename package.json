@@ -5,9 +5,10 @@
     "main": "server/app.js",
     "scripts": {
         "start": "node server/app & npm run tsc & npm run css",
-        "tsc": "npx tsc -w",
-        "css": "sass --watch ./app/sass/:./dev/css/ --style=compressed --source-map",
-        "eslint": "eslint app --ext .ts",
+        "tsc": "tsc -w",
+        "css": "sass --watch ./src/sass/:./dev/css/ --style=compressed --source-map",
+        "eslint": "eslint src --ext .ts",
+        "format": "prettier --write \"src/**/*.ts\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "thegicode",
@@ -17,9 +18,11 @@
         "@typescript-eslint/parser": "^6.2.1",
         "eslint": "^8.46.0",
         "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.9.0",
         "eslint-plugin-prettier": "^5.0.0",
         "eslint-plugin-typescript": "^0.14.0",
         "express": "^4.18.2",
+        "prettier": "^3.0.0",
         "sass": "^1.64.2",
         "typescript": "^5.1.6"
     }

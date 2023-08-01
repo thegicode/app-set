@@ -12,6 +12,6 @@
         "sourceMap": true,
         "outDir": "dev/scripts"
     },
-    "include": ["app/**/*.ts"],
-    "exclude": ["node_modules", "app/__tests__", "server/**.ts"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "server/**.ts"]
 }
