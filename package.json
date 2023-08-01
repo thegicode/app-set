@@ -7,11 +7,18 @@
         "start": "node server/app & npm run tsc & npm run css",
         "tsc": "npx tsc -w",
         "css": "sass --watch ./app/sass/:./dev/css/ --style=compressed --source-map",
+        "eslint": "eslint app --ext .ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "thegicode",
     "license": "ISC",
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.2.1",
+        "@typescript-eslint/parser": "^6.2.1",
+        "eslint": "^8.46.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-plugin-prettier": "^5.0.0",
+        "eslint-plugin-typescript": "^0.14.0",
         "express": "^4.18.2",
         "sass": "^1.64.2",
         "typescript": "^5.1.6"
