@@ -1,4 +1,4 @@
-import Base from "../../scripts/first/Base";
+import Base from "../../scripts/pages/first/Base";
 
 const base = new Base("a");
 

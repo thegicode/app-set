@@ -5,11 +5,15 @@
     "main": "server/app.js",
     "scripts": {
         "start": "node server/app & npm run tsc & npm run css & npm run html & npm run esbuild",
+        "build": "npm run css-build & npm run html-build & npm run esbuild-build & NODE_ENV=production node server/app",
         "tsc": "tsc -w",
-        "css": "sass --watch ./src/sass/:./dev/css/ --style=compressed --source-map",
+        "css": "sass --watch ./src/sass/:./dev/css/ --style=expanded --source-map",
+        "css-build": "sass ./src/sass/:./static/css/ --style=compressed --no-source-map",
         "html": "nodemon --watch src/markup --ext html --exec \"npm run html-minify\"",
         "html-minify": "html-minifier-terser --input-dir src/markup --output-dir dev/html --file-ext html -c html.config.json",
+        "html-build": "html-minifier-terser --input-dir src/markup --output-dir static/html --file-ext html -c html.config.json",
         "esbuild": "esbuild dev/scripts/pages/**/index.js --outdir=dev/js --bundle --watch --sourcemap",
+        "esbuild-build": "esbuild dev/scripts/pages/**/index.js --outdir=static/js --bundle --minify",
         "eslint": "eslint src --ext .ts",
         "format": "prettier --write \"src/**/*.ts\"",
         "test": "jest"

@@ -3,8 +3,8 @@
 const path = require("path");
 
 const isProduction = process.env.NODE_ENV === "production";
-const buildType = isProduction ? "prod" : "dev";
-const port = isProduction ? "0000" : "2222";
+const buildType = isProduction ? "static" : "dev";
+const port = isProduction ? "1234" : "2222";
 const rootPath = path.join(__dirname, "..");
 const staticPath = path.join(rootPath, buildType);
 
