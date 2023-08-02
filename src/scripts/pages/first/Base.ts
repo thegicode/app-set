@@ -1,4 +1,4 @@
-import Nav from "@src/scripts/components/Nav";
+import Nav from "@src/components/Nav";
 
 export default class Base {
     private readonly name;
