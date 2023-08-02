@@ -8,7 +8,8 @@ const setupStaticRoutes = (app, staticPath) => {
     routes.forEach((route) => {
         app.get(`/${route}`, (req, res) => {
             const htmlPath = path.join(staticPath, `/html/${route}.html`);
-            console.log("route", htmlPath);
+
+            console.log("route: ", htmlPath);
 
             fs.readFile(htmlPath, "utf8", (err, data) => {
                 if (err) {
