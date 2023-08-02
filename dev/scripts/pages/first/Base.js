@@ -1,4 +1,4 @@
-import Nav from "@src/components/Nav";
+import Nav from "@scripts/components/Nav";
 export default class Base {
     constructor(name) {
         this.name = name;

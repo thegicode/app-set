@@ -28,7 +28,7 @@ const config: Config = {
     coverageDirectory: "coverage",
 
     // An array of regexp pattern strings used to skip coverage collection
-    coveragePathIgnorePatterns: ["/node_modules/", "/dev/"],
+    coveragePathIgnorePatterns: ["/node_modules/", "/dev/", "/static/"],
 
     // Indicates which provider should be used to instrument code for coverage
     // coverageProvider: "babel",
@@ -87,7 +87,8 @@ const config: Config = {
 
     // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
     moduleNameMapper: {
-        "^@src/(.*)$": "<rootDir>/src/scripts/$1",
+        "^@src/(.*)$": "<rootDir>/src/$1",
+        "^@scripts/(.*)$": "<rootDir>/src/scripts/$1",
     },
 
     // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

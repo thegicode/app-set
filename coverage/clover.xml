@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1690975028680" clover="3.2.0">
-  <project timestamp="1690975028680" name="All files">
+<coverage generated="1690979225486" clover="3.2.0">
+  <project timestamp="1690979225486" name="All files">
     <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2" elements="12" coveredelements="8" complexity="0" loc="8" ncloc="8" packages="2" files="2" classes="2"/>
     <package name="components">
       <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="Nav.ts" path="/Users/deokim/Documents/코딩/project-my/app-set2/src/scripts/components/Nav.ts">
+      <file name="Nav.ts" path="/Users/deokim/Documents/코딩/project-my/app-set/src/scripts/components/Nav.ts">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -13,7 +13,7 @@
     </package>
     <package name="pages.first">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="Base.ts" path="/Users/deokim/Documents/코딩/project-my/app-set2/src/scripts/pages/first/Base.ts">
+      <file name="Base.ts" path="/Users/deokim/Documents/코딩/project-my/app-set/src/scripts/pages/first/Base.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
