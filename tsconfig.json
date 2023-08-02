@@ -15,7 +15,8 @@
         "baseUrl": ".",
         "paths": {
             "@src/*": ["src/*"],
-            "@scripts/*": ["src/scripts/*"]
+            "@scripts/*": ["src/scripts/*"],
+            "@pages/*": ["src/scripts/pages/*"]
         },
         "sourceMap": true
     },
