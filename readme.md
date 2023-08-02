@@ -8,6 +8,7 @@
 
 # directory
 
+    - server : app server(development | production)
     - src : 소스
     - dev : 개발
     - static : 운영 빌드
