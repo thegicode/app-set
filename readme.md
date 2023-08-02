@@ -1,5 +1,7 @@
 # app-set
 
-# 실행
+# npm scripts
 
     - npm start
+    - npm run build
+    - npm test
