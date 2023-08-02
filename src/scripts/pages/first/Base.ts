@@ -1,3 +1,5 @@
+import Nav from "@src/scripts/components/Nav";
+
 export default class Base {
     private readonly name;
 
@@ -6,6 +8,7 @@ export default class Base {
     }
 
     log() {
+        console.log("Nav", Nav);
         return this.name;
     }
 }

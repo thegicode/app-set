@@ -1,1 +1,1 @@
-"use strict";(()=>{var o=class{constructor(t){this.name=t}log(){return this.name}};console.log("Base",o);})();
+"use strict";(()=>{var o=class{constructor(){this.render()}render(){console.log("Nav render")}};var r=class{constructor(t){this.name=t}log(){return console.log("Nav",o),this.name}};console.log("Base",r);})();

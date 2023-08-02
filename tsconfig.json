@@ -13,6 +13,10 @@
         "outDir": "./dev/scripts", // 컴파일된 JavaScript 파일의 출력 디렉터리
         "removeComments": true, // 컴파일된 JavaScript에서 주석 제거
         "types": ["jest"],
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": ["src/*"]
+        },
         "sourceMap": true
     },
     "include": ["src/**/*.ts"],
